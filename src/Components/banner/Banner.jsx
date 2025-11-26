@@ -63,7 +63,7 @@ function Banner() {
         {/* Image wrapper */}
         <div className='absolute md:right-10 bottom-0'>
           <motion.img
-            src="./logo.jpg"
+            src="./logo.jpeg"
             alt=""
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}

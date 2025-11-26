@@ -42,7 +42,7 @@ function About() {
           viewport={{ once: false, amount: 0.2 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <img className="w-full h-full object-cover" src="/skill.png" alt="skills" />
+          <img className="w-full h-full object-cover" src="/skilsElec.png" alt="skills" />
         </motion.div>
 
       </div>

@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@import "tailwindcss";
+
+@theme{
+  --font-josefin: 'Josefin Sans', sans-serif;
+}
+
+@layer componets {
+  .trapezioid {
+    clip-path: polygon(10% 0, 98% 0, 100% 100%,0% 100%);
+    background-color: #18052d;
+    width: 196px;
+    height: 47px;
+    display: none;
+  }
+}
+

@@ -4,14 +4,33 @@ import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 
 function RecentWork() {
-  const projects = [
-    { id: 1, img: "/work_1.jpg", title: "API" },
-    { id: 2, img: "/work_2.webp", title: "example project" },
-    { id: 3, img: "/work_3.jpg", title: "example project" },
-    { id: 4, img: "/work_4.jpg", title: "example project" },
-  ]
+const projects = [
+  { 
+    id: 1, 
+    img: "/work_1.jpg", 
+    title: "API", 
+    desc: "Desenvolvimento de uma API em Node.js para gestão de dados, com rotas simples, integração com base de dados e foco em performance e organização." 
+  },
+  { 
+    id: 2, 
+    img: "/work_2.webp", 
+    title: "Esboço Elétrico", 
+    desc: "Criação de esquemas elétricos funcionais para instalações residenciais e industriais, aplicando normas de segurança e planeamento técnico preciso." 
+  },
+  { 
+    id: 3, 
+    img: "/work_3.jpg", 
+    title: "Hélices de Alta Tensão", 
+    desc: "Trabalho realizado em sistemas de alta tensão com foco em ventilação e dissipação térmica, garantindo proteção e eficiência em ambientes elétricos sensíveis." 
+  },
+  { 
+    id: 4, 
+    img: "/work_4.jpg", 
+    title: "PIC via Arduino", 
+    desc: "Projeto experimental com Arduino para controlo de circuitos e automação básica, aplicando princípios de eletrónica e programação integrada." 
+  },
+];
 
-  const number = "244929100101"
 
   return (
     <div className='w-full py-[60px] bg-[#6e6e6e] flex items-center justify-center px-2 md:px-12'>
@@ -54,7 +73,7 @@ function RecentWork() {
                 <h4 className='text-base text-[#5dffff] font-josefin font-semibold capitalize'>featured project</h4>
                 <h2 className='text-3xl text-white font-josefin font-bold capitalize mt-4'>{project.title}</h2>
                 <div className='mt-6 p-4 bg-gradient-to-r from-[#1e1e1e] to-[#f5f5f5] rounded-lg text-base text-[#fafafa] font-josefin font-normal'>
-                  <p>A web app for visualizing personalized Spotify data. View top artists, tracks, recently played tracks, and more.</p>
+                  <p>{project.desc}</p>
                 </div>
                 <div className='flex items-center gap-3 mt-6'>
                   <motion.a whileHover={{ scale: 1.2 }} transition={{ duration: 0.3 }} href='https://www.facebook.com/profile.php?id=61581624230968&sk=about' className='text-white text-xl'><FaFacebook /></motion.a>
